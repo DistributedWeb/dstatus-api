@@ -1,5 +1,5 @@
 .git
-.dat
+.dwebx
 node_modules
 *.log
 **/.DS_Store

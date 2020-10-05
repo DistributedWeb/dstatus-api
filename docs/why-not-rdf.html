@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,9 +62,9 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
@@ -79,7 +79,7 @@
 <p>Here’s an example Unwalled.Garden object:</p>
 <pre><code class="language-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"unwalled.garden/comment"</span>,
-  <span class="hljs-attr">"topic"</span>: <span class="hljs-string">"dat://unwalled.garden"</span>,
+  <span class="hljs-attr">"topic"</span>: <span class="hljs-string">"dwebx://unwalled.garden"</span>,
   <span class="hljs-attr">"body"</span>: <span class="hljs-string">"Why didn't you use RDF!?"</span>,
   <span class="hljs-attr">"createdAt"</span>: <span class="hljs-string">"2018-12-07T04:15:44.722Z"</span>
 }
@@ -88,39 +88,39 @@
 <p>Consider the following example <a href="https://en.wikipedia.org/wiki/JSON-LD">JSON-LD</a> schema:</p>
 <pre><code class="language-json">{
   <span class="hljs-attr">"@context"</span>: {
-    <span class="hljs-attr">"web"</span>: <span class="hljs-string">"dat://websites.com/manifest#"</span>,
-    <span class="hljs-attr">"social"</span>: <span class="hljs-string">"dat://social.com/"</span>
+    <span class="hljs-attr">"web"</span>: <span class="hljs-string">"dwebx://websites.com/manifest#"</span>,
+    <span class="hljs-attr">"social"</span>: <span class="hljs-string">"dwebx://social.com/"</span>
   },
   <span class="hljs-attr">"web:title"</span>: <span class="hljs-string">"Paul Frazee"</span>,
-  <span class="hljs-attr">"web:description"</span>: <span class="hljs-string">"Beaker guy"</span>,
+  <span class="hljs-attr">"web:description"</span>: <span class="hljs-string">"DBrowserX guy"</span>,
   <span class="hljs-attr">"social:follows"</span>: [
-    <span class="hljs-string">"dat://alice.com"</span>,
-    <span class="hljs-string">"dat://bob.com"</span>
+    <span class="hljs-string">"dwebx://alice.com"</span>,
+    <span class="hljs-string">"dwebx://bob.com"</span>
   ]
 }
 </code></pre>
 <p>That object is a shorthand for this:</p>
 <pre><code class="language-json">{
-  <span class="hljs-attr">"dat://websites.com/manifest#title"</span>: <span class="hljs-string">"Paul Frazee"</span>,
-  <span class="hljs-attr">"dat://websites.com/manifest#description"</span>: <span class="hljs-string">"Beaker guy"</span>,
-  <span class="hljs-attr">"dat://social.com/follows"</span>: [<span class="hljs-string">"dat://alice.com"</span>, <span class="hljs-string">"dat://bob.com"</span>]
+  <span class="hljs-attr">"dwebx://websites.com/manifest#title"</span>: <span class="hljs-string">"Paul Frazee"</span>,
+  <span class="hljs-attr">"dwebx://websites.com/manifest#description"</span>: <span class="hljs-string">"DBrowserX guy"</span>,
+  <span class="hljs-attr">"dwebx://social.com/follows"</span>: [<span class="hljs-string">"dwebx://alice.com"</span>, <span class="hljs-string">"dwebx://bob.com"</span>]
 }
 </code></pre>
 <p>Both forms are difficult to read and author:</p>
 <pre><code class="language-js">paul[<span class="hljs-string">'web:title'</span>] = <span class="hljs-string">'Paul Frazee'</span>
 <span class="hljs-comment">// or</span>
-paul[<span class="hljs-string">'dat://websites.com/manifest#title'</span>] = <span class="hljs-string">'Paul Frazee'</span>
+paul[<span class="hljs-string">'dwebx://websites.com/manifest#title'</span>] = <span class="hljs-string">'Paul Frazee'</span>
 </code></pre>
 <p>Programmers have to work with schemas! They should be simple and friendly to use. If we think in terms of records instead of graphs, we end up with objects that are much nicer to use.</p>
 <pre><code class="language-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"websites.com/manifest"</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Paul Frazee"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Beaker guy"</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"DBrowserX guy"</span>
 }
 </code></pre>
 <p>Which makes our code much cleaner:</p>
 <pre><code class="language-js">paul.title = <span class="hljs-string">'Paul Frazee'</span>
-paul.description = <span class="hljs-string">'Beaker guy'</span>
+paul.description = <span class="hljs-string">'DBrowserX guy'</span>
 </code></pre>
 <p>The Unwalled.Garden philosophy about RDF is <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">YAGNI (You Ain’t Gonna Need It)</a>. We see RDF’s complexity as a turn-off to developers and something we should try to avoid if we can.</p>
 </main>

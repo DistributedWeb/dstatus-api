@@ -1,20 +1,20 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/dats.json",
+  "$id": "dwebx://unwalled.garden/dvaults.json",
   "type": "object",
-  "title": "Dats",
-  "description": "A list of dats.",
+  "title": "DVaults",
+  "description": "A list of dvaults.",
   "required": [
     "type",
-    "dats"
+    "dvaults"
   ],
   "properties": {
     "type": {
       "type": "string",
       "description": "The object's type",
-      "const": "unwalled.garden/dats"
+      "const": "unwalled.garden/dvaults"
     },
-    "dats": {
+    "dvaults": {
       "type": "array",
       "items": {
         "type": "object",

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>A Quick Primer on Dat | Unwalled.Garden</title>
+    <title>A Quick Primer on DWebX | Unwalled.Garden</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/syntax.css">
@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,25 +62,25 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
       </nav>
-      <main><h2>A Quick Primer on Dat</h2>
-<p><a href="https://dat.foundation">Dat</a> is a peer-to-peer protocol for publishing files. It uses cryptography to sign and verify all information. Like BitTorrent, users can “seed” data to help keep it online and contribute bandwidth.</p>
-<p>Each “dat” is given a public key address which looks like this:</p>
+      <main><h2>A Quick Primer on DWebX</h2>
+<p><a href="https://dwebx.foundation">DWebX</a> is a peer-to-peer protocol for publishing files. It uses cryptography to sign and verify all information. Like BitTorrent, users can “seed” data to help keep it online and contribute bandwidth.</p>
+<p>Each “dwebx” is given a public key address which looks like this:</p>
 <blockquote>
-<p><a href="dat://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3/">dat://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3/</a></p>
+<p><a href="dwebx://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3/">dwebx://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3/</a></p>
 </blockquote>
 <p>The public key is a 64-character hex string, but DNS may be used to provide a human-readable shortname:</p>
 <blockquote>
-<p><a href="dat://dat.foundation/">dat://dat.foundation/</a></p>
+<p><a href="dwebx://dwebx.foundation/">dwebx://dwebx.foundation/</a></p>
 </blockquote>
-<p>Dat is a highly flexible protocol. It can sync many kinds of data, including event logs and key-value databases. However, the most common usecase is to share filesets which are called “hyperdrives.”</p>
-<p>Applications like the <a href="https://beakerbrowser.com">Beaker Browser</a> use Dat hyperdrives as websites. Users can browse to the hyperdrives and view the HTML/CSS/JS just like any HTTP website. Because anybody can create a hyperdrive by simply creating a new public key, users on the Dat Web can freely create and publish their own websites.</p>
+<p>DWebX is a highly flexible protocol. It can sync many kinds of data, including event logs and key-value databases. However, the most common usecase is to share filesets which are called “hyperdrives.”</p>
+<p>Applications like the <a href="https://dbrowser.com">DBrowserX Browser</a> use DWebX hyperdrives as websites. Users can browse to the hyperdrives and view the HTML/CSS/JS just like any HTTP website. Because anybody can create a ddrive by simply creating a new public key, users on the DWebX Web can freely create and publish their own websites.</p>
 </main>
     </div>
   </body>

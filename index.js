@@ -4,15 +4,15 @@
  * 
  * ## Example usage:
  * 
- * import {statuses, follows} from 'dat://unwalled.garden/index.js'
+ * import {statuses, follows} from 'dwebx://unwalled.garden/index.js'
  *
  * statuses.add('Hello, world!')
- * follows.add('dat://beakerbrowser.com')
+ * follows.add('dwebx://dbrowser.com')
  *
  * ## What is this?
  * 
- * This module is a thin wrapper around Beaker browser's builtin APIs.
- * It requires Beaker browser v0.9+ to work.
+ * This module is a thin wrapper around DBrowserX browser's builtin APIs.
+ * It requires DBrowserX browser v0.9+ to work.
  *
  * ## Why does this exist?
  * 
@@ -20,7 +20,7 @@
  * library" which can be imported by ES modules. As part of the Extensible
  * Web Manifesto, a goal for an stdlib is to use shim solutions which can
  * smoothly upgrade to native Web APIs if/when they are adopted. In that
- * spirit, the Beaker team wanted a solution for its new Web APIs that
+ * spirit, the DBrowserX team wanted a solution for its new Web APIs that
  * wasn't just a new set of builtin global objects. By wrapping the
  * `navigator.importSystemAPI()` call in this shim, we gave ourselves some
  * freedom to adopt the future stdlib solutions.
@@ -29,7 +29,7 @@
  * 
  * The existing Web APIs for running unwalled.garden's database are
  * not suitable enough for our goals. We gave it a shot (see
- * https://github.com/beakerbrowser/libfritter) and found that indexeddb
+ * https://github.com/dbrowser/libfritter) and found that indexeddb
  * couldn't perform the way we needed. Rather than try to create new
  * database primitives, we decided to build high-level APIs into the
  * browser directly. By having consumers import from this wrapper, we left

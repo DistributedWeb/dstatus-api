@@ -5,7 +5,7 @@ Follows are subscriptions to sites. Following a site causes the user to download
 ---
 
 ```js
-import {follows} from 'dat://unwalled.garden/index.js'
+import {follows} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await follows.list({

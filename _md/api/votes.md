@@ -5,7 +5,7 @@ Votes are up/down judgments on resources around the Web. They can be set to 1 (u
 ---
 
 ```js
-import {votes} from 'dat://unwalled.garden/index.js'
+import {votes} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await votes.list({

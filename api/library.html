@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,17 +62,17 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
       </nav>
       <main><h2>Library API</h2>
-<p>An API for dats that have been saved locally and/or published on the network.</p>
+<p>An API for dvaults that have been saved locally and/or published on the network.</p>
 <hr>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> { library } <span class="hljs-keyword">from</span> <span class="hljs-string">'dat://unwalled.garden/index.js'</span>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> { library } <span class="hljs-keyword">from</span> <span class="hljs-string">'dwebx://unwalled.garden/index.js'</span>
 
 <span class="hljs-comment">// read</span>
 <span class="hljs-keyword">await</span> library.list({
@@ -108,17 +108,17 @@
 <tr>
 <td>key</td>
 <td><code>string</code></td>
-<td>The key of the dat</td>
+<td>The key of the dwebx</td>
 </tr>
 <tr>
 <td>url</td>
 <td><code>string</code></td>
-<td>The url of the dat</td>
+<td>The url of the dwebx</td>
 </tr>
 <tr>
 <td>author</td>
 <td><code>Object</code></td>
-<td>The dat that published the dat record (not necessarily the author of the dat)</td>
+<td>The dwebx that published the dwebx record (not necessarily the author of the dwebx)</td>
 </tr>
 <tr>
 <td> url</td>
@@ -143,12 +143,12 @@
 <tr>
 <td> isOwner</td>
 <td><code>boolean</code></td>
-<td>Is the local user the owner of the author dat?</td>
+<td>Is the local user the owner of the author dwebx?</td>
 </tr>
 <tr>
 <td>meta</td>
 <td><code>Object</code></td>
-<td>Information about the dat</td>
+<td>Information about the dwebx</td>
 </tr>
 <tr>
 <td> title</td>
@@ -168,57 +168,57 @@
 <tr>
 <td> mtime</td>
 <td><code>number</code></td>
-<td>The timestamp of the last observed change to the dat</td>
+<td>The timestamp of the last observed change to the dwebx</td>
 </tr>
 <tr>
 <td> size</td>
 <td><code>number</code></td>
-<td>The local size of the dat in bytes</td>
+<td>The local size of the dwebx in bytes</td>
 </tr>
 <tr>
 <td> author</td>
 <td><code>url</code></td>
-<td>The url of the author of this dat</td>
+<td>The url of the author of this dwebx</td>
 </tr>
 <tr>
 <td> forkOf</td>
 <td><code>url</code></td>
-<td>The url of the dat this dat is forked from</td>
+<td>The url of the dwebx this dwebx is forked from</td>
 </tr>
 <tr>
 <td> isOwner</td>
 <td><code>boolean</code></td>
-<td>Is the local user the owner of the dat?</td>
+<td>Is the local user the owner of the dwebx?</td>
 </tr>
 <tr>
 <td>isSaved</td>
 <td><code>boolean</code></td>
-<td>Has the local user saved the dat?</td>
+<td>Has the local user saved the dwebx?</td>
 </tr>
 <tr>
 <td>savedAt</td>
 <td><code>number</code></td>
-<td>The timestamp of when the dat was saved to the local user’s library</td>
+<td>The timestamp of when the dwebx was saved to the local user’s library</td>
 </tr>
 <tr>
 <td>isHosting</td>
 <td><code>boolean</code></td>
-<td>Is the local user hosting the dat?</td>
+<td>Is the local user hosting the dwebx?</td>
 </tr>
 <tr>
 <td>visibility</td>
 <td><code>string</code></td>
-<td>The <a href="/docs/common-fields#visibility">visibility</a> of the dat and its record</td>
+<td>The <a href="/docs/common-fields#visibility">visibility</a> of the dwebx and its record</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h3>Notes</h3>
-<p>The canonical record of a saved dat is stored privately. If the visibility is “public” then a link-entry will also be added to the <a href="/dats">public dats record</a>.</p>
-<p>Thumbnails of published dats should be published at <code>/.data/thumbs/</code> using the key as the filename.</p>
+<p>The canonical record of a saved dwebx is stored privately. If the visibility is “public” then a link-entry will also be added to the <a href="/dvaults">public dvaults record</a>.</p>
+<p>Thumbnails of published dvaults should be published at <code>/.data/thumbs/</code> using the key as the filename.</p>
 <hr>
 <h3>list(opts)</h3>
-<p>List dats by that are saved locally or published by authors.</p>
+<p>List dvaults by that are saved locally or published by authors.</p>
 <table>
 <thead>
 <tr>
@@ -245,25 +245,25 @@
 <td> types</td>
 <td><code>string|string[]</code></td>
 <td></td>
-<td>Filter by dat types</td>
+<td>Filter by dwebx types</td>
 </tr>
 <tr>
 <td> keys</td>
 <td><code>string|string[]</code></td>
 <td></td>
-<td>Filter by dat keys</td>
+<td>Filter by dwebx keys</td>
 </tr>
 <tr>
 <td> isSaved</td>
 <td><code>boolean</code></td>
 <td></td>
-<td>Filter by: Has the local user saved the dat?</td>
+<td>Filter by: Has the local user saved the dwebx?</td>
 </tr>
 <tr>
 <td> isHosting</td>
 <td><code>boolean</code></td>
 <td></td>
-<td>Filter by: Is the local user hosting the dat?</td>
+<td>Filter by: Is the local user hosting the dwebx?</td>
 </tr>
 <tr>
 <td> visibility</td>
@@ -281,7 +281,7 @@
 <td> isOwner</td>
 <td><code>boolean</code></td>
 <td></td>
-<td>Filter by: Is the local user the owner of the dat?</td>
+<td>Filter by: Is the local user the owner of the dwebx?</td>
 </tr>
 <tr>
 <td> sortBy</td>
@@ -323,7 +323,7 @@
 </table>
 <hr>
 <h3>configure(key, opts)</h3>
-<p>Configure a dat in the local user’s library.</p>
+<p>Configure a dwebx in the local user’s library.</p>
 <table>
 <thead>
 <tr>
@@ -338,7 +338,7 @@
 <td>key</td>
 <td><code>string</code></td>
 <td></td>
-<td>Dat key (required)</td>
+<td>DWebX key (required)</td>
 </tr>
 <tr>
 <td>opts</td>
@@ -350,13 +350,13 @@
 <td> isSaved</td>
 <td><code>boolean</code></td>
 <td></td>
-<td>Save the dat to the local user’s library?</td>
+<td>Save the dwebx to the local user’s library?</td>
 </tr>
 <tr>
 <td> isHosting</td>
 <td><code>boolean</code></td>
 <td></td>
-<td>Host the dat using the local user’s devices?</td>
+<td>Host the dwebx using the local user’s devices?</td>
 </tr>
 <tr>
 <td> <a href="/docs/common-fields#visibility">visibility</a></td>

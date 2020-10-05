@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/bookmark.json",
+  "$id": "dwebx://unwalled.garden/bookmark.json",
   "type": "object",
   "title": "Bookmark",
   "description": "A saved/shared link to some URL.",

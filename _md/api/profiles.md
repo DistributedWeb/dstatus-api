@@ -5,7 +5,7 @@ The profiles API fetches descriptions of users. It's used to fetch the local use
 ---
 
 ```js
-import {profiles} from 'dat://unwalled.garden/index.js'
+import {profiles} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await profiles.me()

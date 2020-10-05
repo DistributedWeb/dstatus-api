@@ -5,7 +5,7 @@ Bookmarks are links which you have saved and will want to reference in the futur
 ---
 
 ```js
-import {bookmarks} from 'dat://unwalled.garden/index.js'
+import {bookmarks} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await bookmarks.list({

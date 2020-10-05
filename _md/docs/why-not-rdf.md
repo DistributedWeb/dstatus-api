@@ -12,7 +12,7 @@ Here's an example Unwalled.Garden object:
 ```json
 {
   "type": "unwalled.garden/comment",
-  "topic": "dat://unwalled.garden",
+  "topic": "dwebx://unwalled.garden",
   "body": "Why didn't you use RDF!?",
   "createdAt": "2018-12-07T04:15:44.722Z"
 }
@@ -25,14 +25,14 @@ Consider the following example [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) 
 ```json
 {
   "@context": {
-    "web": "dat://websites.com/manifest#",
-    "social": "dat://social.com/"
+    "web": "dwebx://websites.com/manifest#",
+    "social": "dwebx://social.com/"
   },
   "web:title": "Paul Frazee",
-  "web:description": "Beaker guy",
+  "web:description": "DBrowserX guy",
   "social:follows": [
-    "dat://alice.com",
-    "dat://bob.com"
+    "dwebx://alice.com",
+    "dwebx://bob.com"
   ]
 }
 ```
@@ -41,9 +41,9 @@ That object is a shorthand for this:
 
 ```json
 {
-  "dat://websites.com/manifest#title": "Paul Frazee",
-  "dat://websites.com/manifest#description": "Beaker guy",
-  "dat://social.com/follows": ["dat://alice.com", "dat://bob.com"]
+  "dwebx://websites.com/manifest#title": "Paul Frazee",
+  "dwebx://websites.com/manifest#description": "DBrowserX guy",
+  "dwebx://social.com/follows": ["dwebx://alice.com", "dwebx://bob.com"]
 }
 ```
 
@@ -52,7 +52,7 @@ Both forms are difficult to read and author:
 ```js
 paul['web:title'] = 'Paul Frazee'
 // or
-paul['dat://websites.com/manifest#title'] = 'Paul Frazee'
+paul['dwebx://websites.com/manifest#title'] = 'Paul Frazee'
 ```
 
 Programmers have to work with schemas! They should be simple and friendly to use. If we think in terms of records instead of graphs, we end up with objects that are much nicer to use.
@@ -61,7 +61,7 @@ Programmers have to work with schemas! They should be simple and friendly to use
 {
   "type": "websites.com/manifest",
   "title": "Paul Frazee",
-  "description": "Beaker guy"
+  "description": "DBrowserX guy"
 }
 ```
 
@@ -69,7 +69,7 @@ Which makes our code much cleaner:
 
 ```js
 paul.title = 'Paul Frazee'
-paul.description = 'Beaker guy'
+paul.description = 'DBrowserX guy'
 ```
 
 The Unwalled.Garden philosophy about RDF is [YAGNI (You Ain't Gonna Need It)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it). We see RDF's complexity as a turn-off to developers and something we should try to avoid if we can.

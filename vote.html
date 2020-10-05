@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,9 +62,9 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
@@ -80,7 +80,7 @@
 <h4>Example</h4>
 <pre><code class="language-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"unwalled.garden/vote"</span>,
-  <span class="hljs-attr">"topic"</span>: <span class="hljs-string">"dat://beakerbrowser.com"</span>,
+  <span class="hljs-attr">"topic"</span>: <span class="hljs-string">"dwebx://dbrowser.com"</span>,
   <span class="hljs-attr">"vote"</span>: <span class="hljs-number">1</span>,
   <span class="hljs-attr">"createdAt"</span>: <span class="hljs-string">"2018-12-07T02:52:11.947Z"</span>
 }
@@ -88,7 +88,7 @@
 <h4>Schema</h4>
 <pre><code class="language-json">{
   <span class="hljs-attr">"$schema"</span>: <span class="hljs-string">"http://json-schema.org/draft-07/schema#"</span>,
-  <span class="hljs-attr">"$id"</span>: <span class="hljs-string">"dat://unwalled.garden/vote.json"</span>,
+  <span class="hljs-attr">"$id"</span>: <span class="hljs-string">"dwebx://unwalled.garden/vote.json"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"object"</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Vote"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A vote up or down on some resource."</span>,

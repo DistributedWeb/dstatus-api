@@ -13,10 +13,10 @@
 ```json
 {
   "type": "unwalled.garden/bookmark",
-  "href": "dat://beakerbrowser.com",
-  "title": "Beaker Browser",
-  "description": "An experimental peer-to-peer Web browser. Built using the dat protocol.",
-  "tags": ["p2p", "web", "dat"],
+  "href": "dwebx://dbrowser.com",
+  "title": "DBrowserX Browser",
+  "description": "An experimental peer-to-peer Web browser. Built using the dwebx protocol.",
+  "tags": ["p2p", "web", "dwebx"],
   "createdAt": "2018-12-07T02:52:11.947Z"
 }
 ```
@@ -26,7 +26,7 @@
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/bookmark.json",
+  "$id": "dwebx://unwalled.garden/bookmark.json",
   "type": "object",
   "title": "Bookmark",
   "description": "A saved/shared link to some URL.",

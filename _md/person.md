@@ -8,9 +8,9 @@
 
 ---
 
-#### Dat.json fields
+#### DWebX.json fields
 
-The `/dat.json` file has the following fields:
+The `/dwebx.json` file has the following fields:
 
 |Key|Value|
 |-|-|
@@ -32,7 +32,7 @@ Example:
 
 |Path|Type|
 |-|-|
-|`/dat.json`|Standard dat.json file|
+|`/dwebx.json`|Standard dwebx.json file|
 |`/thumb.(png|jpg|jpeg)`|Profile picture|
 |`/.data`|[Data directory](/dir/data)|
 |`/.refs`|[Refs directory](/dir/refs)|

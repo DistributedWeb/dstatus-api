@@ -5,7 +5,7 @@ Statuses are blurbs of content that's broadcasted on a feed. They're sometimes k
 ---
 
 ```js
-import {statuses} from 'dat://unwalled.garden/index.js'
+import {statuses} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await statuses.list({

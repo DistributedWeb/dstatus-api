@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,30 +62,30 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
       </nav>
       <main><h2>Browser integration</h2>
-<p><a href="https://beakerbrowser.com">Beaker Browser 0.9</a> implements Unwalled.Garden as part of the browser. It supports a high-level API which is loaded from the <a href="dat://unwalled.garden">dat://unwalled.garden</a> dat. These APIs wrap the Dat filesystem and Beaker’s internal indexes.</p>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> {statuses, follows, reactions, comments} <span class="hljs-keyword">from</span> <span class="hljs-string">'dat://unwalled.garden/index.js'</span>
-<span class="hljs-keyword">await</span> follows.add(<span class="hljs-string">'dat://beakerbrowser.com'</span>)
+<p><a href="https://dbrowser.com">DBrowserX Browser 0.9</a> implements Unwalled.Garden as part of the browser. It supports a high-level API which is loaded from the <a href="dwebx://unwalled.garden">dwebx://unwalled.garden</a> dwebx. These APIs wrap the DWebX filesystem and DBrowserX’s internal indexes.</p>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> {statuses, follows, reactions, comments} <span class="hljs-keyword">from</span> <span class="hljs-string">'dwebx://unwalled.garden/index.js'</span>
+<span class="hljs-keyword">await</span> follows.add(<span class="hljs-string">'dwebx://dbrowser.com'</span>)
 <span class="hljs-keyword">var</span> feed = <span class="hljs-keyword">await</span> statuses.list({<span class="hljs-attr">reverse</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">limit</span>: <span class="hljs-number">10</span>})
 <span class="hljs-keyword">var</span> status = <span class="hljs-keyword">await</span> statuses.add(<span class="hljs-string">'Hello, world!'</span>)
 <span class="hljs-keyword">await</span> comments.add(status.url, <span class="hljs-string">'Great post by me!'</span>)
 <span class="hljs-keyword">await</span> reactions.add(status.url, <span class="hljs-string">'like'</span>)
 </code></pre>
-<p>The browser automatically creates a personal dat for the user on first load. The personal site acts as the user profile and is where the user’s content is published.</p>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> {profiles} <span class="hljs-keyword">from</span> <span class="hljs-string">'dat://unwalled.garden/index.js'</span>
+<p>The browser automatically creates a personal dwebx for the user on first load. The personal site acts as the user profile and is where the user’s content is published.</p>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> {profiles} <span class="hljs-keyword">from</span> <span class="hljs-string">'dwebx://unwalled.garden/index.js'</span>
 <span class="hljs-keyword">var</span> me = <span class="hljs-keyword">await</span> profiles.me()
-me.url         <span class="hljs-comment">// 'dat://12cd..ff'</span>
+me.url         <span class="hljs-comment">// 'dwebx://12cd..ff'</span>
 me.title       <span class="hljs-comment">// 'Bob'</span>
 me.description <span class="hljs-comment">// 'A hacker'</span>
 </code></pre>
-<p>Beaker will track its APIs with the latest Unwalled.Garden standards. More implementations of the APIs will be created as the network matures.</p>
+<p>DBrowserX will track its APIs with the latest Unwalled.Garden standards. More implementations of the APIs will be created as the network matures.</p>
 </main>
     </div>
   </body>

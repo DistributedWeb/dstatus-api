@@ -5,7 +5,7 @@ Comments are replies to content around the Web. They are threaded (meaning that 
 ---
 
 ```js
-import {comments} from 'dat://unwalled.garden/index.js'
+import {comments} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await comments.list({
@@ -157,8 +157,8 @@ Add a comment to the current user's site.
 #### Example
 
 ```js
-await comments.add('dat://unwalled.garden', 'What a great site!')
-await comments.add('dat://unwalled.garden', {body: 'TODO: read this later', visibility: 'private'})
+await comments.add('dwebx://unwalled.garden', 'What a great site!')
+await comments.add('dwebx://unwalled.garden', {body: 'TODO: read this later', visibility: 'private'})
 ```
 
 ---

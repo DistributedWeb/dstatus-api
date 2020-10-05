@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dat Mounts | Unwalled.Garden</title>
+    <title>DWebX Mounts | Unwalled.Garden</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/syntax.css">
@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,20 +62,20 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
       </nav>
-      <main><h2>Dat Mounts</h2>
-<p>Dat has the ability to “mount” dats into each other as subfolders. This is similar to a symlink.</p>
+      <main><h2>DWebX Mounts</h2>
+<p>DWebX has the ability to “mount” dvaults into each other as subfolders. This is similar to a symlink.</p>
 <p>Consider this example:</p>
-<pre><code>dat://bob.com/sites/ug -&gt; dat://unwalled.garden/
+<pre><code>dwebx://bob.com/sites/ug -&gt; dwebx://unwalled.garden/
 </code></pre>
-<p>Reading from a mount is similar to reading a subfolder. In this case, reading <code>/sites/ug/index.html</code> would give you the content of <code>dat://unwalled.garden/index.html</code>.</p>
-<p>Mounts have a performance benefit in Dat: because mount data can be transfered over an existing connection, it can be faster to read than loading the dat separately. We use that property to distribute metadata efficiently in the <a href="/dir/refs">refs directory</a>.</p>
+<p>Reading from a mount is similar to reading a subfolder. In this case, reading <code>/sites/ug/index.html</code> would give you the content of <code>dwebx://unwalled.garden/index.html</code>.</p>
+<p>Mounts have a performance benefit in DWebX: because mount data can be transfered over an existing connection, it can be faster to read than loading the dwebx separately. We use that property to distribute metadata efficiently in the <a href="/dir/refs">refs directory</a>.</p>
 </main>
     </div>
   </body>

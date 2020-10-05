@@ -20,8 +20,8 @@ All followed sites should be mounted in the [refs directory](/dir/refs) to enabl
 {
   "type": "unwalled.garden/follows",
   "urls": [
-    "dat://pfrazee.com",
-    "dat://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3"
+    "dwebx://pfrazee.com",
+    "dwebx://43dfc9f23fdded8cc7c01c71c0702a0529130af0258e7fb30bf5a0a3f73d69b3"
   ]
 }
 ```
@@ -31,7 +31,7 @@ All followed sites should be mounted in the [refs directory](/dir/refs) to enabl
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/follows.json",
+  "$id": "dwebx://unwalled.garden/follows.json",
   "type": "object",
   "title": "Follows",
   "description": "A list of data subscriptions.",

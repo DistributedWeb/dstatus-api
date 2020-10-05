@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dats (unwalled.garden/dats) | Unwalled.Garden</title>
+    <title>DVaults (unwalled.garden/dvaults) | Unwalled.Garden</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="/assets/syntax.css">
@@ -9,7 +9,7 @@
   <body>
     <h1><a href="/">Unwalled.Garden</a></h1>
     <a class="nav-open"><img src="/assets/hamburger.svg"></a>
-    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://beakerbrowser.com">Beaker Browser</a> 0.9 release.</div>
+    <div class="notice">Status: DRAFT. Part of the upcoming <a href="https://dbrowser.com">DBrowserX Browser</a> 0.9 release.</div>
     <div class="page">
       <nav>
         <a class="nav-close"><img src="/assets/hamburger.svg"></a>
@@ -20,7 +20,7 @@
           <li><a href="/docs/common-fields">Common fields</a></li>
           <li><a href="/docs/browser-integration">Browser integration</a></li>
         </ul></li>
-        <li><a href="/docs/dat-primer">Dat protocol</a><ul>
+        <li><a href="/docs/dwebx-primer">DWebX protocol</a><ul>
           <li><a href="/docs/mounts">Mounts</a></li>
         </ul></li>
         <li><a href="/docs/why-not-rdf">Why not RDF?</a></li>
@@ -62,29 +62,29 @@
 <ul>
   <li>Links
     <ul>
-      <li><a href="https://github.com/beakerbrowser/unwalled.garden">Github Repo</a></li>
-      <li><a href="https://beakerbrowser.com">Beaker Browser</a></li>
-      <li><a href="https://dat.foundation">Dat protocol</a></li>
+      <li><a href="https://github.com/dbrowser/unwalled.garden">Github Repo</a></li>
+      <li><a href="https://dbrowser.com">DBrowserX Browser</a></li>
+      <li><a href="https://dwebx.foundation">DWebX protocol</a></li>
     </ul>
   </li>
 </ul>
       </nav>
-      <main><h2>Dats <code>unwalled.garden/dats</code></h2>
+      <main><h2>DVaults <code>unwalled.garden/dvaults</code></h2>
 <hr>
 <ul>
 <li>File type</li>
-<li><strong>Description</strong>: A list of dats.</li>
-<li><strong>Path</strong>: <code>/.data/dats.json</code></li>
+<li><strong>Description</strong>: A list of dvaults.</li>
+<li><strong>Path</strong>: <code>/.data/dvaults.json</code></li>
 </ul>
 <hr>
 <h4>Example</h4>
 <pre><code class="language-json">{
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"unwalled.garden/dats"</span>,
-  <span class="hljs-attr">"dats"</span>: [
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"unwalled.garden/dvaults"</span>,
+  <span class="hljs-attr">"dvaults"</span>: [
     {
       <span class="hljs-attr">"key"</span>:  <span class="hljs-string">"0529130af0258e7fb30bf5a0a3f73d69b343dfc9f23fdded8cc7c01c71c0702a"</span>,
       <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Paul Frazee"</span>,
-      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Beaker guy"</span>,
+      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"DBrowserX guy"</span>,
       <span class="hljs-attr">"type"</span>: [<span class="hljs-string">"unwalled.garden/person"</span>]
     },
     {
@@ -98,21 +98,21 @@
 <h4>Schema</h4>
 <pre><code class="language-json">{
   <span class="hljs-attr">"$schema"</span>: <span class="hljs-string">"http://json-schema.org/draft-07/schema#"</span>,
-  <span class="hljs-attr">"$id"</span>: <span class="hljs-string">"dat://unwalled.garden/dats.json"</span>,
+  <span class="hljs-attr">"$id"</span>: <span class="hljs-string">"dwebx://unwalled.garden/dvaults.json"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"object"</span>,
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Dats"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A list of dats."</span>,
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"DVaults"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A list of dvaults."</span>,
   <span class="hljs-attr">"required"</span>: [
     <span class="hljs-string">"type"</span>,
-    <span class="hljs-string">"dats"</span>
+    <span class="hljs-string">"dvaults"</span>
   ],
   <span class="hljs-attr">"properties"</span>: {
     <span class="hljs-attr">"type"</span>: {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>,
       <span class="hljs-attr">"description"</span>: <span class="hljs-string">"The object's type"</span>,
-      <span class="hljs-attr">"const"</span>: <span class="hljs-string">"unwalled.garden/dats"</span>
+      <span class="hljs-attr">"const"</span>: <span class="hljs-string">"unwalled.garden/dvaults"</span>
     },
-    <span class="hljs-attr">"dats"</span>: {
+    <span class="hljs-attr">"dvaults"</span>: {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"array"</span>,
       <span class="hljs-attr">"items"</span>: {
         <span class="hljs-attr">"type"</span>: <span class="hljs-string">"object"</span>,

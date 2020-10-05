@@ -13,7 +13,7 @@
 ```json
 {
   "type": "unwalled.garden/vote",
-  "topic": "dat://beakerbrowser.com",
+  "topic": "dwebx://dbrowser.com",
   "vote": 1,
   "createdAt": "2018-12-07T02:52:11.947Z"
 }
@@ -24,7 +24,7 @@
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/vote.json",
+  "$id": "dwebx://unwalled.garden/vote.json",
   "type": "object",
   "title": "Vote",
   "description": "A vote up or down on some resource.",

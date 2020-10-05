@@ -1,10 +1,10 @@
-## Dats `unwalled.garden/dats`
+## DVaults `unwalled.garden/dvaults`
 
 ---
 
  - File type
- - **Description**: A list of dats.
- - **Path**: `/.data/dats.json`
+ - **Description**: A list of dvaults.
+ - **Path**: `/.data/dvaults.json`
 
 ---
 
@@ -12,12 +12,12 @@
 
 ```json
 {
-  "type": "unwalled.garden/dats",
-  "dats": [
+  "type": "unwalled.garden/dvaults",
+  "dvaults": [
     {
       "key":  "0529130af0258e7fb30bf5a0a3f73d69b343dfc9f23fdded8cc7c01c71c0702a",
       "title": "Paul Frazee",
-      "description": "Beaker guy",
+      "description": "DBrowserX guy",
       "type": ["unwalled.garden/person"]
     },
     {
@@ -34,21 +34,21 @@
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/dats.json",
+  "$id": "dwebx://unwalled.garden/dvaults.json",
   "type": "object",
-  "title": "Dats",
-  "description": "A list of dats.",
+  "title": "DVaults",
+  "description": "A list of dvaults.",
   "required": [
     "type",
-    "dats"
+    "dvaults"
   ],
   "properties": {
     "type": {
       "type": "string",
       "description": "The object's type",
-      "const": "unwalled.garden/dats"
+      "const": "unwalled.garden/dvaults"
     },
-    "dats": {
+    "dvaults": {
       "type": "array",
       "items": {
         "type": "object",

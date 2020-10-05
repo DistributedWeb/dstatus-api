@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/comment.json",
+  "$id": "dwebx://unwalled.garden/comment.json",
   "type": "object",
   "title": "Comment",
   "description": "A text post about some resource.",

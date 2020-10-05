@@ -23,7 +23,7 @@
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/status.json",
+  "$id": "dwebx://unwalled.garden/status.json",
   "type": "object",
   "title": "Status",
   "description": "A broadcasted piece of content.",

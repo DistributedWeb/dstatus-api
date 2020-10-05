@@ -17,7 +17,7 @@ Each "phrase" is constrained to 20 lowercase english letters.
 ```json
 {
   "type": "unwalled.garden/reaction",
-  "topic": "dat://beakerbrowser.com/",
+  "topic": "dwebx://dbrowser.com/",
   "phrases": ["like", "woah"]
 }
 ```
@@ -27,7 +27,7 @@ Each "phrase" is constrained to 20 lowercase english letters.
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://unwalled.garden/reaction.json",
+  "$id": "dwebx://unwalled.garden/reaction.json",
   "type": "object",
   "title": "Reaction",
   "description": "An string annotation on some resource.",

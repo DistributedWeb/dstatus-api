@@ -20,7 +20,7 @@ This example will render the 10 latest posts in the user's feed.
 ### index.js
 
 ```js
-import {posts} from 'dat://unwalled.garden/index.js'
+import {posts} from 'dwebx://unwalled.garden/index.js'
 
 class MyApp extends HTMLElement {
   constructor(){

@@ -7,7 +7,7 @@ Each reaction is constrained to 20 lowercase english letters.
 ---
 
 ```js
-import {reactions} from 'dat://unwalled.garden/index.js'
+import {reactions} from 'dwebx://unwalled.garden/index.js'
 
 // read
 await reactions.list({
