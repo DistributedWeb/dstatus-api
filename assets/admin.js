@@ -2,7 +2,7 @@ const ASSETS_DIRECTORY_PATH = '/assets'
 const MARKDOWN_DIRECTORY_PATH = '/_md'
 const OUTPUT_DIRECTORY_PATH = '/'
 
-const self = new DatArchive(window.location)
+const self = new DWebXArchive(window.location)
 var watchStream
 
 adminMain()

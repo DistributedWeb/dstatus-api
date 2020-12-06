@@ -1,6 +1,6 @@
 ## Browser integration
 
-[DBrowserX Browser 0.9](https://dbrowser.com) implements Unwalled.Garden as part of the browser. It supports a high-level API which is loaded from the [dwebx://unwalled.garden](dwebx://unwalled.garden) dwebx. These APIs wrap the DWebX filesystem and DBrowserX's internal indexes.
+[DBrowserX Browser 0.9](https://dbrowser.com) implements Unwalled.Garden as part of the browser. It supports a high-level API which is loaded from the [dwebx://unwalled.garden](dwebx://unwalled.garden) dwebx. These APIs wrap the DWebX filesystem and dBrowser's internal indexes.
 
 ```js
 import {statuses, follows, reactions, comments} from 'dwebx://unwalled.garden/index.js'
